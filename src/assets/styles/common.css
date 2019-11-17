@@ -1,0 +1,86 @@
+/*@font-face {
+    font-family: 'Renault Life Web Bold';
+    src: local('Renault Life Web Bold'),
+    url(../fonts/renault-life-bold.woff) format("woff"),
+    url(../fonts/renault-life-bold.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Renault Life Web';
+    src: local('Renault Life Web'),
+    url(../fonts/renault-life-regular.woff) format("woff"),
+    url(../fonts/renault-life-regular.ttf) format('ttf');
+}*/
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Renault Life Web", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  font-weight: normal;
+}
+
+h1 {
+  margin: 0.67em 0;
+}
+
+body.modal-open {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+a, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.MuiPaper-root {
+  color: rgb(0, 0, 0);
+}
