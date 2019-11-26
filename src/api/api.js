@@ -27,7 +27,10 @@ ws.interceptors.response.use(
 const api = {
   save: {
     parse: (form) => {
-      return ws.post(endpoints.save.parse, form);
+      return ws.post(endpoints.save.parse, form, {
+        headers: { 'content-type': 'multipart/form-data' },
+        responseType: 'arraybuffer'
+      });
     },
     convert: (data) => {
       return ws.post(endpoints.save.convert, data);

@@ -1,6 +1,6 @@
 export default {
   save: {
-    parse: '/save/parse',
-    convert: '/save/convert'
+    parse: 'http://localhost:8081/api/save/parse',
+    convert: '/api/save/convert'
   }
 }

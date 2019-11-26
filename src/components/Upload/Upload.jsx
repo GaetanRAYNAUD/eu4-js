@@ -1,4 +1,5 @@
 import Button from '@material-ui/core/Button';
+import api from 'api/api';
 import { colors } from 'assets/styles/colors';
 import DropZone from 'components/dropZone';
 import * as JSZip from 'jszip';
@@ -45,7 +46,15 @@ class Upload extends PureComponent {
 
   handleValidate = async () => {
     const { file } = this.state;
-    //Todo call api
+    let formData = new FormData();
+
+    formData.append("save", file);
+    const response = await api.save.parse(formData);
+
+    const zip = await JSZip.loadAsync(response.data);
+
+    //Todo dispatch zip content
+    console.log(await zip.file("data.json").async("string"));
   };
 
   render() {
